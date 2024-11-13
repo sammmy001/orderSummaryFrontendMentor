@@ -2,8 +2,12 @@
     margin: 0px;
 }
 body{
-color: #8C8D9B;
+background-image: url(./images/pattern-background-mobile.svg);
+background-size:100%;
+background-repeat: no-repeat;
+background-size: contain;
 background-color: #D3DCFB;
+color: #8C8D9B;
 font-family: "Red Hat Display", sans-serif;
 
 }
@@ -25,6 +29,7 @@ height: 100vh;
     justify-content: space-between;
     padding-bottom: 30px;
     border-radius: 20px;
+    box-shadow: 0px 10px 20px #aba6e4;
 }
 #illustration{
     width: 100%;
@@ -64,6 +69,13 @@ height: 100vh;
 }
 .proceed:hover{
     cursor: pointer;
+    background-color:#4d41d7 ;
+    transform: scale(.98);
+    transition: .3s;
+}
+.proceed:active{
+    transform: scale(1.1);
+    transition: .3s;
 }
 h3{
    margin-bottom: 15px;
@@ -79,10 +91,19 @@ h3{
 }
 #cancel:hover{
     cursor: pointer;
+    color: #1A264F;
+    font-weight: 700;
+}
+#cancel:active{
+    transition: scale;
 }
 a{
     color: #514BA6;
     font-weight: 500;
+}
+a:hover{
+    color: rgb(25, 14, 149);
+    transition: .03s;
 }
 
 @media screen and (min-width:922px){
@@ -100,7 +121,9 @@ a{
 
     }
   
-    
+   body{
+       background-image: url(./images/pattern-background-desktop.svg);
+    }
 }
 /* s that the image height dont large down and push other contents outside the container/overflow */
 @media screen and (min-width:564px){
